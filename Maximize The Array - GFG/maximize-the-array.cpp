@@ -16,7 +16,7 @@ public:
             s.insert(arr1[i]);
             s.insert(arr2[i]);
         }
-        while(s.size() > n) s.erase(*s.begin());
+        while(s.size() > n) s.erase(s.begin());
         vector<int>res;
         for(int i=0;i<n;i++){
             if(s.find(arr2[i]) != s.end()){
