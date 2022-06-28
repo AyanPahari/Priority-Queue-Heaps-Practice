@@ -15,7 +15,7 @@ public:
                 if(count == 3) res++;
                 if(mp.find(s[i]) != mp.end()){
                     mp[s[i]]--;
-                    if(mp[s[i]] == 0) count--;
+                    // if(mp[s[i]] == 0) count--;
                 }
                 i++;
                 j++;
