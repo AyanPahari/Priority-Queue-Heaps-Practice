@@ -17,17 +17,13 @@ class Solution {
         mp['2']++;
         
         while(j < S.length()){
-            if(mp.find(S[j]) != mp.end()){
-                mp[S[j]]--;
-                if(mp[S[j]] == 0) count--;
-            }
+            mp[S[j]]--;
+            if(mp[S[j]] == 0) count--;
             if(count == 0){
                 while(count == 0){
                     mini = min(mini, j - i + 1);
-                    if(mp.find(S[i]) != mp.end()){
-                        mp[S[i]]++;
-                        if(mp[S[i]] == 1) count++;
-                    }
+                    mp[S[i]]++;
+                    if(mp[S[i]] == 1) count++;
                     i++;
                 }
             }
