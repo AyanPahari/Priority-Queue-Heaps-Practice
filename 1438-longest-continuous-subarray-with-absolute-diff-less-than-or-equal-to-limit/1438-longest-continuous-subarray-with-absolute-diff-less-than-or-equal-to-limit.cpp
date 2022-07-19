@@ -1,7 +1,7 @@
 class Solution {
 public:
     int longestSubarray(vector<int>& nums, int limit) {
-        int i = 0, j = 0, mini = INT_MAX, maxi = INT_MIN, ans = 0;
+        int i = 0, j = 0, ans = 0;
         priority_queue<pair<int,int>>maxh;
         priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>>minh;
         
